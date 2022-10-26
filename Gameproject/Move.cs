@@ -36,7 +36,7 @@ public class Move : MonoBehaviour
         if (goingRight == true)
         {
 
-            //rb.velocity = new Vector3(speed, 0, 0);
+            
 
             transform.Translate(Vector3.right * speed * Time.deltaTime);
 
@@ -45,7 +45,7 @@ public class Move : MonoBehaviour
         else
         {
 
-            //rb.velocity = new Vector3(-speed, 0, 0);
+           
 
             transform.Translate(Vector3.left * speed * Time.deltaTime);
 
@@ -57,7 +57,7 @@ public class Move : MonoBehaviour
 
             goingRight = false;
 
-            //speed = Random.Range(3, 10);
+           
 
         }
 
@@ -66,7 +66,7 @@ public class Move : MonoBehaviour
 
             goingRight = true;
 
-            //speed = Random.Range(3, 10);
+            
 
         }
 
@@ -77,36 +77,9 @@ public class Move : MonoBehaviour
 
         speed = Random.Range(3, 10);
 
-        print("homo");
+        
 
     }
-
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-
-    //    if (other.gameObject == goLeft)
-    //    {
-
-    //        goingRight = false;
-
-    //        speed = Random.Range(3, 10);
-
-    //    }
-
-    //    if (other.gameObject == goRight)
-    //    {
-
-    //        goingRight = true;
-
-    //        speed = Random.Range(3, 10);
-
-    //    }
-
-
-    //}
-
-
 
 
 
